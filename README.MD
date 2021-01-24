@@ -1,6 +1,6 @@
-#Yu-Gi-Oh Collection v1.9.1
+# Yu-Gi-Oh Collection v1.9.1
 
-#English
+# English
 
 **Hi everyone !**
 
@@ -25,7 +25,7 @@ NeutronStars.
 
 -------------
 
-#Français
+# Français
 
 **Bonjour à tous**
 
