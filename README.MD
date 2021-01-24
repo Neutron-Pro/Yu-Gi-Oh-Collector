@@ -47,7 +47,3 @@ Pour plus d'information sur les commandes, voir les screens en dessous.
 
 Bon Jeu !
 NeutronStars.
-
------------------
-
-Commands sampl
