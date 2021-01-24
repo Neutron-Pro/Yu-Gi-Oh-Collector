@@ -1,0 +1,826 @@
+{
+  "starting": "❌ Yu-Gi-Oh Collector est en train de redémarrer...",
+  "shop_special": "\uD83C\uDF89 \uD83C\uDF8A Spécial **10 000 Joueurs inscrits** !!! **-50%** sur **TOUTE** la boutique pendant 1 semaine ! Merci à tous !!! \uD83C\uDF89 \uD83C\uDF8A\n",
+  "update": "❓ Une nouvelle version est maintenant disponible ! ▶️ `release latest`",
+  "description": "Collectionner toutes les cartes de Yu-Gi-Oh !",
+  "money": "<:ygomoney:672880682065854466> + {money}$",
+  "exp": "<a:ygoexp:673629296958505040> + {exp} Exp",
+  "combo": "<:atk:696479584564019270> **Combo**: {combo}",
+  "card_pieces": "<:shard:714935344008528023> Morceaux de Carte",
+  "card_pieces_bonus": "<:shard:714935344008528023> + {count} Morceau(x) de Carte",
+  "scapegoat": "<:goats:696486779699593216> **Bouc Emissaire**: {count}",
+  "rewards": "<:ygofield:674394111385665556> {player}, {name} vous offre {count} booster(s) {booster} grâce à son don de {don}€.",
+  "info": {
+    "players": "**Joueurs inscrits**: {players}\n**Votes**: {votes} [Total: {total_votes}]",
+    "partner": {
+      "title": "Partenaire",
+      "description": "<:omgserv:728627893621751848> [**OMGServ**]({link})\n  ▶️ -5% sur toute leur boutique: `YGOC`\n  ▶️ [Click ici pour voir leur boutique.]({link})"
+    }
+  },
+  "ban_info": {
+    "0": "❌",
+    "1": "Limité",
+    "2": "Semi-Limité",
+    "3": "✅",
+    "banlist": "BanList"
+  },
+  "misc_info": "Informations supplémentaires",
+  "beta_name": "**Nom Béta**",
+  "formats": "**Formats**",
+  "treated_as": "**Traitée comme**",
+  "ocg_date": "**Sortie OCG**",
+  "tcg_date": "**Sortie TCG**",
+  "not_released": "❌ Pas disponible",
+  "mystery_card": {
+    "money": "<:mystery_card:728771639097163827> **Cadeau Mystère** {player} Vous récoltez {money} <:ygomoney:672880682065854466>. [<a:ygoexp:673629296958505040> {exp} Exp]",
+    "fragment": "<:mystery_card:728771639097163827> **Cadeau Mystère** {player} Vous récoltez {fragment} <:shard:714935344008528023>. [<a:ygoexp:673629296958505040> {exp} Exp]"
+  },
+  "premium": {
+    "name": "<:ygopuzzle:672881036601983027> Premium",
+    "description": "Le premium vous apporteras des petits avantages. (Réduction de -20% sur toute la boutique, -10% sur la RollMachine, le logo du puzzle du millenium sur le profil, 1 à 2 cartes supplémentaire dans les boosters, et bien d'autres qui arriveront au fur et à mesure.)",
+    "one": {
+      "name": "<:ygopuzzle:672881036601983027> Premium 1 Mois"
+    },
+    "three": {
+      "name": "<:ygopuzzle:672881036601983027> Premium 3 Mois"
+    },
+    "six": {
+      "name": "<:ygopuzzle:672881036601983027> Premium 6 Mois"
+    },
+    "year": {
+      "name": "<:ygopuzzle:672881036601983027> Premium 1 an"
+    }
+  },
+  "voted": {
+    "title": "Vote",
+    "description": "<:dmg:696486425063063667> Vous avez la possibilité de voter pour **Yu-Gi-Oh Collector** sur **DiscordBotList** afin de recevoir une récompense. **[[voter]](https://top.gg/bot/672416519912947732/vote)**",
+    "titleVote": "Récompense du vote",
+    "descriptionVote": "Merci d'avoir voté pour **Yu-Gi-Oh Collector**. Voici votre récompense:\n\n{money}\n{exp}\n{booster}\n{card_pieces}"
+  },
+  "booster": {
+    "opening": {
+      "error": "❌ Impossible d'ouvrir le booster {name} ! Vérifiez que vous en possédez sinon vous pouvez en acheter à la boutique avec la commande `shop`",
+      "notConfirm": "Souhaitez-vous vraiment ouvrir le booster {simple_name} ?\n\n**Description:**\n\n{description}\n\n- Si oui veuillez confirmer votre commande: `booster {name} [all] confirm`",
+      "title": "Ouverture d'un booster {booster}",
+      "remaining_card": "<:ygodeck:672880677271896064> **Cartes restantes**: {count}/{count_max}",
+      "titleAll": "Cartes récupérées"
+    },
+    "premium": "\n\n**Avantage Premium**: +{count} carte(s) supplémentaire.",
+    "common": {
+      "name": "Common",
+      "description": "Petit booster classique qui vous permettra de compléter vos cartes de rareté normale.\n\n**Booster de 5 cartes dont les raretés sont les suivantes:**\n\nCommon: 91%\nSuper Rare: 5%\nRare: 3%\nUltra Rare: 1%{premium}"
+    },
+    "rare": {
+      "name": "Rare",
+      "description": "Dans ce booster vous pourrez trouver des cartes que vous ne pouvez pas avoir dans les `hourly` et `daily`.\n\n**Booster de 5 cartes dont les raretés sont les suivantes:**\n\nRare: 93.5%\nUltra Rare: 5%\nSecret Rare: 1%\nDuel Terminal Normal Parallel: 0.5%{premium}"
+    },
+    "super": {
+      "name": "Super",
+      "description": "Savourez le plaisir d'ouvrir un booster avec des cartes d'une grande rareté !\n\n**Booster de 5 cartes dont les raretés sont les suivantes:**\n\nSuper Rare: 80%\nSecret Rare: 15%\nGold Rare: 5%{premium}"
+    },
+    "ultra": {
+      "name": "Ultra",
+      "description": "Faites frissonner votre clique avec ce booster hors du commun !\n\n**Booster de 5 cartes dont les raretés sont les suivantes:**\n\nUltra Rare: 84.5%\nGold Rare: 10%\nUltimate Rare: 5%\nShatterfoil Rare: 0.5%{premium}"
+    },
+    "special": {
+      "name": "Special",
+      "description": "Ce booster spécial ne contient qu'une carte de tous types de rareté et n'est distribué qu'en de rares occasions."
+    },
+    "mega": {
+      "common":  {
+        "name": "MegaCommon",
+        "description": "Mega booster classique qui vous permettra de compléter vos cartes de rareté normale.\n\n**Booster de 14 cartes dont les raretés sont les suivantes:**\n\nCommon: 95.5%\nSuper Rare: 3%\nRare: 1%\nUltra Rare: 0.5%\n\nEt une carte Secret Rare en bonus.{premium}"
+      },
+      "rare": {
+        "name": "MegaRare",
+        "description": "Dans ce Mega booster vous pourrez trouver des cartes que vous ne pouvez pas avoir dans les `hourly` et `daily`.\n\n**Booster de 14 cartes dont les raretés sont les suivantes:**\n\nRare: 98.3%\nUltra Rare: 1%\nSecret Rare: 0.5%\nDuel Terminal Normal Parallel: 0.2%\n\nEt une carte Gold Rare en bonus.{premium}"
+      },
+      "super": {
+        "name": "MegaSuper",
+        "description": "Savourez le plaisir d'ouvrir un Mega booster avec des cartes d'une grande rareté !\n\n**Booster de 9 cartes dont les raretés sont les suivantes:**\n\nSuper Rare: 98.5%\nSecret Rare: 1%\nGold Rare: 0.5%\n\nEt une carte Ultimate Rare en bonus.{premium}"
+      },
+      "ultra": {
+        "name": "MegaUltra",
+        "description": "Faites frissonner votre clique avec ce Mega booster hors du commun !\n\n**Booster de 9 cartes dont les raretés sont les suivantes:**\n\nUltra Rare: 84.5%\nGold Rare: 10%\nUltimate Rare: 5%\nShatterfoil Rare: 0.5%\n\nEt une carte Prismatic Secret Rare en bonus.{premium}"
+      }
+    }
+  },
+  "command": {
+    "notRegister": "❌ Impossible de faire cette commande ! Vous devez d'abord vous enregistrer avec la commande `register`.",
+    "register": {
+      "title": "❓ RGPD",
+      "title_confirm": "✅ RGPD",
+      "description": "Permet de s'enregistrer sur la base de donnée afin de pouvoir jouer. Si vous vous enregistrez, vous acceptez que l'on manipule vos données dans le cadre privé du jeu `Yu-Gi-Oh Collector`.",
+      "already": "❌ Vous êtes déjà enregistré !",
+      "request": "⚠️ Vous êtes sur le point de vous inscrire sur **Yu-Gi-Oh Collector**.\n\n\uD83D\uDD11 Si vous validez votre inscription, nous nous autorisons à stocker votre identifiant unique, pseudo ainsi que photo de profil Discord et donné de jeu. Celles-ci ne seront utilisées que dans le cadre privé de cette application. Vous pourrez y accéder avec la commande `data` ou bien les supprimer totalement avec la commande `unregister`.\n\n\uD83D\uDCCC Nous nous permettons aussi à vous notifier en message privé en cas de besoin et toujours en rapport avec **Yu-Gi-Oh Collector**. Vous avez la liberté de désactiver les notifications avec la commande `notification`.\n\n❓ Souhaitez-vous réellement vous inscrire ?\n\n▶️ `register confirm`",
+      "confirm": "Votre inscription a été pris en compte. Pour vous souhaitez la bienvenue sur **Yu-Gi-Oh Collector** nous vous offrons 4 Boosters `Common` et un Booster `Rare` à utiliser dès à présent avec la commande `booster` ! `Joueurs inscrits: {players}`"
+    },
+    "unregister": {
+      "description": "Permets de se désenregistrer de la base de données. Attention ceci est irréversible et vous perdrez la totalité de vos données de jeu.",
+      "confirm": "✅ Vos données ont bien été supprimés et ne sont plus récupérables.",
+      "request": "⚠️ Attention vous êtes sur le point de supprimer l'entièreté de vos données de jeu. Ceci est irréversible !\n\n❓ Souhaitez-vous vraiment supprimer vos données ?\n\n▶️ `unregister confirm`"
+    },
+    "profile": {
+      "description": "Voir son profile. On y retrouve son argent et d'autres informations.",
+      "infoGeneral": "Informations Générales",
+      "level": "<:ygokey:672881027286433811> **Niveau**: {level}",
+      "exp": "<a:ygoexp:673629296958505040> **Exp**: {exp}/{exp_max}",
+      "money": "<:ygomoney:672880682065854466> **Argent**: {money}$",
+      "cardCount": "<:ygodeck:672880677271896064> **Cartes totales**: {cards}",
+      "progression": "<:ygoprogress:672974038154608681> **Progression**: {rate}%",
+      "card_pieces": "<:shard:714935344008528023> **Morceaux de Carte**: {count}",
+      "notifications": "✉️ **Notification**: {count}",
+      "ygopass": "<:dmg:696486425063063667> **YGIPass**: {level}/{level_max}",
+      "hourly": {
+        "now": "<:ygoTimeWiz:674395570449678336> **Hourly**: Disponible",
+        "time": "<:ygoTimeWiz:674395570449678336> **Hourly**: Dans {min} minute(s) et {sec} seconde(s)"
+      },
+      "daily": {
+        "now": "<:reborn:696487847800340491> **Daily**: Disponible",
+        "time": "<:reborn:696487847800340491> **Daily**: Non disponible"
+      },
+      "inscription": "Inscrit depuis le: {date}",
+      "boosters": "Boosters",
+      "formatBooster": "**{booster}**: {count}{option}",
+      "optionBooster":" (+{remaining} carte(s) restante(s))",
+      "rarityRubric": "Nombre de carte par rareté",
+      "rarityFormat": "**{rarity}**: {count} carte(s)",
+      "ygipass_title": "YGIPass",
+      "progression_title": "Progression",
+      "timeTitle": "Temps"
+    },
+    "hourly": {
+      "description": "Cette commande permet de vous faire gagner une carte et de l'argent une fois par heure. Alors pensez'y.",
+      "error": "❌ Impossible de faire cette commande pour l'instant ! Disponible dans {min} minute(s) et {sec} seconde(s).",
+      "informations": "Informations",
+      "monsterInfo": "Monstre",
+      "title": "<:ygoTimeWiz:674395570449678336> Hourly"
+    },
+    "daily": {
+      "description": "Cette commande permet de vous faire gagner une carte ou deux si vous êtes chanceux ainsi que de l'argent. Et si vous êtes vraiment chanceux vous pourrez même gagner des boosters.",
+      "error": "❌ Impossible de faire cette commande pour l'instant ! Veuillez patienter, il sera de nouveau disponible demain.",
+      "bonus_booster": "<:cercle:696488133726044250> +1 Booster {booster}."
+    },
+    "booster": {
+      "description": "Découvrez le plaisir d'ouvrir des boosters, tous aussi incroyables les uns que les autres",
+      "not": "❌ Vous n'avez plus de booster. Vous pouvez en acheter dans la boutique avec la commande `shop`.",
+      "list": "Liste de vos boosters:\n{boosters}\n\n{command}",
+      "title": "<:book_1:696488405420212284> Ouverture de Booster",
+      "no_trade": "({count} ne sont pas échangeables.)"
+    },
+    "shop": {
+      "description": "Permets d'acheter des consommables de type booster ou autres.",
+      "list": "\uD83D\uDCCC [**KaibaCorp**] Voici la liste des articles disponibles:\n{list}\n\n▶️ `shop <ID> [count] [CodePromo]`",
+      "noneArticle": "❌ Aucun article n'a été trouvé !",
+      "notFound": "❌ L'article avec l'identifiant **{id}** n'a pas été trouvé !",
+      "dontBuy": "❌ Impossible d'acheter cet article !",
+      "buyConfirm": "✅ Votre achat a bien été effectué ! Vous venez d'acheter: {count} {article}",
+      "request": "⚠️ Vous êtes sur le point d'acheter {count} article(s) {article} pour le prix de `{price}$`{code}.\n\n\uD83D\uDCDC **Description**:\n{description}\n\n❓ Souhaitez-vous vraiment acheter cet article ?\n\n▶️ `{command}`",
+      "code": " avec le code `{code}`"
+    },
+    "shop2": {
+      "description": "Permet d'acheter des consommables de type booster ou autres.",
+      "no_type": "▶️ `shop <booster|premium>`"
+    },
+    "inventory": {
+      "description": "Voir sa liste de cartes collectées.",
+      "notFound": "❌ Aucune carte n'a été trouvé !",
+      "title": "<:ygocards:672880681965322240> Liste de vos cartes",
+      "footer": "{page}/{max_page}",
+      "card_founded": "`{count} carte(s) trouvée(s).`",
+      "help_info": "```markdown\n# \uD83D\uDCC1 Inventory\nVoir sa liste de cartes collectées.\n\n# Filtres possible:\nname, rarity, archetype, attribute, type, race, count, level, atk, def, id\n\n# Caractères de filtre:\n\": Lorsque la valeur contient des espaces. (Il faut les placer au début et à la fin.)\n ↪ name=\"Dragon Blanc aux Yeux Bleus\"\n!: Pour récupérer toutes les cartes qui ne matche pas avec la valeur. (À placer avant le mot.)\n ↪ name=\"!Dragon Blanc aux Yeux Bleus\"\n ↪ level=!8\n< ou >: Pour les valeurs numériques. Si la valeur de la carte est plus grande ou petite que la valeur proposée.\n ↪ atk=>2500\n^: S'il est placé au début alors ça retournera toutes les cartes qui commenceront par la valeur proposée. S'il est placé à la fin alors ça sera toutes les cartes qui termineront par la valeur sinon s'il est placé au début et à la fin alors ça récupérait toutes les cartes qui contiennent la valeur.\n ↪ name=^Dragon\n ↪ name=Bleus^\n ↪ name=\"^Yeux Bleus^\"\n\n#Exemples:\nrarity=\"!super rare\" atk=>1000 level=4\n ↪ Toutes les cartes qui ne sont pas super rare avec une attaque supérieure à 1000 et un niveau égal à 4.\n\ntype=^monster^ rarity=\"^super rare^\"\n ↪ Toutes les cartes qui contiennent monster dans leur type et qui contiennent super rare dans leur rareté.\n```"
+    },
+    "wikilist": {
+      "description": "Voir la liste des cartes.",
+      "notFound": "❌ Aucune carte n'a été trouvé !",
+      "title": "<:ygocards:672880681965322240> Liste des cartes",
+      "footer": "{page}/{max_page}",
+      "card_founded": "`{count} carte(s) trouvée(s).`",
+      "help_info": "```markdown\n# \uD83D\uDCC1 Wikilist\nVoir la liste des cartes.\n\n# Filtres possible:\nname, rarity, archetype, attribute, type, race, count, level, atk, def, id\n\n# Caractères de filtre:\n\": Lorsque la valeur contient des espaces. (Il faut les placer au début et à la fin.)\n ↪ name=\"Dragon Blanc aux Yeux Bleus\"\n!: Pour récupérer toutes les cartes qui ne matche pas avec la valeur. (À placer avant le mot.)\n ↪ name=\"!Dragon Blanc aux Yeux Bleus\"\n ↪ level=!8\n< ou >: Pour les valeurs numériques. Si la valeur de la carte est plus grande ou petite que la valeur proposée.\n ↪ atk=>2500\n^: S'il est placé au début alors ça retournera toutes les cartes qui commenceront par la valeur proposée. S'il est placé à la fin alors ça sera toutes les cartes qui termineront par la valeur sinon s'il est placé au début et à la fin alors ça récupérait toutes les cartes qui contiennent la valeur.\n ↪ name=^Dragon\n ↪ name=Bleus^\n ↪ name=\"^Yeux Bleus^\"\n\n#Exemples:\nrarity=\"!super rare\" atk=>1000 level=4\n ↪ Toutes les cartes qui ne sont pas super rare avec une attaque supérieure à 1000 et un niveau égal à 4.\n\ntype=^monster^ rarity=\"^super rare^\"\n ↪ Toutes les cartes qui contiennent monster dans leur type et qui contiennent super rare dans leur rareté.\n```"
+    },
+    "card": {
+      "description": "Voir les informations d'une carte possédée.",
+      "notFound": "❌ Aucune carte n'a été trouvé !\n\n▶️ `card <ID|Name>`",
+      "rarityTitle": "Rareté(s) possédée(s)",
+      "title": "Information de la Carte"
+    },
+    "trade": {
+      "description": "Permets de faire des échanges entre joueurs.",
+      "banned": "❌ Vous avez été banni des trades pour abu de double compte.",
+      "sample": "❓ La commande `trade` permet de faire des échanges entre joueurs.\nVoici quelques exemples.\n```\nCommande générale\ntrade info [<@User|UserId>]\n\nPour l'éméteur:\n\ntrade new [<object.name>...] <@User> [<object.name>...]\ntrade cancel\ntrade claim\n\nPour le recepteur:\n\ntrade accept [<@User|IdUser>]\ntrade deny [<@User|IdUser]>\n\nVoici quelques exemple pour le paramètre <object.name>:\n\ncard.<CardId>.<CardRarity> (card.123456.secret_rare)\nbooster.<BoosterName>\nmoney.<Count>\n\nIl y a aussi possibilité d'ajouter un multiplicateur à la fin des items (=X [X étant le multiplicateur])\n\nExemple:\ncard.123546.common=5\n```",
+      "already_request": "⚠️ Vous avez déjà fait une demande d'échange à **{name}** `<{id}>`. Une seule demande d'échange ne peut être effectuée.\nPour annuler votre demande faites `trade cancel` sinon attendez sa réponse.",
+      "same_user": "❌ Impossible de faire des échanges avec vous-même !",
+      "player_not_found": "❌ Cette utilisateur n'est pas un joueur.",
+      "trade_not_valid": "❌ Impossible de faire cette demande. Vous n'avez pas tous les items proposés !",
+      "request_send": "✅ {request}, votre demande d'échange a bien été envoyé à {target} !\nFaites `trade cancel` pour annuler votre demande.",
+      "give_not_item": "❌ Ne donne pas d'item.",
+      "info": {
+        "request": "```\nVous avez une demande en attente:\n- {name}: {status}{info_sup}\n```",
+        "accept": "\nFaites la commande \"trade claim\" pour récupérer vos items.",
+        "waiting": "En attente",
+        "accepted": "Acceptée",
+        "refused": "Refusée",
+        "notSend": "```\nVous n'avez envoyé aucune demande.\n```",
+        "notReceive": "```\nVous n'avez reçu aucune demande.\n```",
+        "target": "```\nVous avez reçu {count} demande(s):\n{request}\n\nFaites la commande \"trade accept <@User|IdUser>\" ou \"trade deny <@User|IdUser>\" pour accepter ou refuser vos demandes.\n```",
+        "id_not_correct": "❌ L'identifiant sélectionné n'est pas correct.",
+        "id_not_found": "❌ Aucune demande de ce joueur n'a été trouvé."
+      },
+      "cancelled": "✅ Votre demande d'échange a bien été annulée et vous avez récupéré vos items.",
+      "cancel_request": "❓ Souhaitez-vous vraiment annuler votre demande d'échange ?\n\ntrade cancel confirm",
+      "cancel_claim_accept": "❌ Impossible d'annuler la demande, celle-ci a déjà été acceptée ! Vous récupérez donc les items que vous avez demandés en échange.",
+      "cancel_claim_refuse": "❌ Impossible d'annuler la demande, celle-ci a déjà été refusée ! Vous récupérez donc vos items fournit lors de l'échange.",
+      "cant_claim": "❌ Impossible de récupérer le contenu de l'échange. L'échange est toujours en attente de réponse. Si vous souhaitez annuler l'échange faites la commande `trade cancel`.",
+      "claim_accept": "✅ Félicitations, l'échange a été accepté ! Vous récupérez donc les items que vous avez demandés.",
+      "claim_refuse": "❌ Malheureusement l'échange n'a pas été accepté ! Vous récupérez donc vos items fournit lors de l'échange.",
+      "dont_accept": "❌ Vous n'avez reçu aucune demande de ce joueur.",
+      "accept_request": "❓ Souhaitez-vous vraiment accepter cette demande d'échange ?\n`trade accept {id} confirm`",
+      "refuse_request": "❓ Souhaitez-vous vraiment refuser cette demande d'échange ?\n`trade deny {id} confirm`",
+      "refuse_confirm": "✅ L'échange a bien été refusé.",
+      "accept_not_valid": "❌ Impossible d'effectuer cet échange ! Vous n'avez pas les items requis. Vous pouvez accepter la demande plus tard sinon refusez là avec la commande `trade deny confirm`.",
+      "accept_confirm": "✅ L'échange a bien été accepté. Vous fournissez donc les items demandés et recevez les items de l'autre joueur.",
+      "cant_trade": "❌ Vous ne pouvez pas encore faire d'échange. Il faut être au minimum niveau 15 avant de pouvoir utiliser ce service."
+    },
+    "data": {
+      "description": "Récupérer ses données stockées dans la base de données."
+    },
+    "notifications": {
+      "description": "Permettre ou non au bot de vous notifier en message privé.",
+      "on": "✅ Vous permettez désormais au bot à vous notifier en message privé.",
+      "off": "❌ Vous ne permettez plus désormais au bot à vous notifier en message privé.",
+      "none": "❌ Vous n'avez pas de notification... `notifications <on|off>`",
+      "title": "✉️ Notification"
+    },
+    "daycard": {
+      "description": "Chaque jour une carte est sélectionnée et si vous la possédée alors vous gagnez une récompense.",
+      "already_played": "[**KaibaCorp**] ❌ Impossible de rejouer ! Vous avez déjà participé.",
+      "win": "[**KaibaCorp**] ✅ Félicitations ! D'après notre banque de données vous possédez la carte du jour. Un vrai duelist de la **KaibaCorp** se doit d'avoir toutes les cartes !\n**Votre récompense**:\n+{money}$\n+{exp} Exp",
+      "loose": "[**KaibaCorp**] ❌ D'après notre banque de données vous ne possédez pas la carte du jour. Vous n'êtes pas encore digne d'être un vrai duelist de la **KaibaCorp** ! +{exp} Exp",
+      "title": "Carte du jour",
+      "info": "La carte du jour est `{name}`. Pensez-vous l'avoir ?\n`daycard confirm`"
+    },
+    "wiki": {
+      "description": "Voir les informations d'une carte.",
+      "notFound": "❌ Aucune carte n'a été trouvé !\n\n▶️ `wiki <ID|Name>`",
+      "rarityTitle": "Rareté(s) disponible(s)",
+      "title": "Wiki"
+    },
+    "secretword": {
+      "description": "Récupérer un mot secret à des heures précises et redonnez ce dernier au créneau horaire suivant. (Horaires: 00h, 06h, 12h, 18h)",
+      "transmission_error": "❌ [**KaibaCorp**] ... ... ... ... ... ...\n\n*Aucun signal... Le bureau des mots secrets ne semble pas ouvert*",
+      "already_get": "❌ [**KaibaCorp**] Vous avez déjà récupéré votre mot secret. Un duelist n'oublie pas ses cartes !",
+      "already_get_last": "⚠️ [**KaibaCorp**] Vous n'avez toujours pas donné votre mot secret ! Si vous confirmez votre commande maintenant vous ne pourrez pas récupérer votre récompense !\n\n▶️ `secretword get confirm`",
+      "get": "[**KaibaCorp**] <:ygohat:674394585673498634> Voici votre mot secret: `{secret_word}`. Pensez bien à le donner dans 6 heures ! ▶️ `secretword give {secret_word}`",
+      "cant_give": "❌ [**KaibaCorp**] Vous n'avez pas récupéré le mot secret d'il y a 6h. Impossible de faire cette commande ! ▶️ `secretword get`",
+      "not_confirm": "❌ [**KaibaCorp**] Pensez-vous que le mot est vraiment `{secret_word}` ? Si vous en êtes sûr alors confirmez la commande : ▶️ `secretword give {secret_word} confirm`.",
+      "success": "[**KaibaCorp**] <:ygohat:674394585673498634> Félicitations ! Le mot secret est bien `{secret_word}`. Vous êtes un excellent duelist ! Pour vous récompenser:\n\n{rewards}",
+      "loose": "❌ [**KaibaCorp**] Vous êtes un duelist pathétique ! `{secret_word}` n'est pas le mot secret.\n\n{rewards}"
+    },
+    "top": {
+      "description": "Voir la liste des tops joueurs.",
+      "top_list": "<:ygoeye:673690854656966696> Top {top} des Joueurs\n```{top_list}\n```",
+      "top_empty": "<:ygoeye:673690854656966696> Aucun joueur dans le top {top} !",
+      "cards": {
+        "top_list": "<:ygoeye:673690854656966696> Top {top} des Joueurs ayant le plus de cartes.\n```{top_list}\n```",
+        "top_empty": "<:ygoeye:673690854656966696> Aucun joueur dans le top {top} ayant le plus de cartes !",
+        "cards": "Carte(s)"
+      },
+      "vote": {
+        "top_list": "<:ygoeye:673690854656966696> Top {top} des Joueurs ayant fait le plus de vote.\n```{top_list}\n```",
+        "top_empty": "<:ygoeye:673690854656966696> Aucun joueur dans le top {top} ayant fait le plus de vote !",
+        "vote": "Vote(s)"
+      },
+      "hourly": {
+        "top_list": "<:ygoeye:673690854656966696> Top {top} des Joueurs ayant fait le plus de hourly.\n```{top_list}\n```",
+        "top_empty": "<:ygoeye:673690854656966696> Aucun joueur dans le top {top} ayant fait le plus de hourly !",
+        "hourly": "Hourlies"
+      },
+      "daily": {
+        "top_list": "<:ygoeye:673690854656966696> Top {top} des Joueurs ayant fait le plus de daily.\n```{top_list}\n```",
+        "top_empty": "<:ygoeye:673690854656966696> Aucun joueur dans le top {top} ayant fait le plus de daily !",
+        "daily": "Dailies"
+      }
+    },
+    "vote": {
+      "description": "Votez pour **Yu-Gi-Oh Collector** sur **DiscordBotList** et recevez une méga récompense.",
+      "already_voted": "❌ Vous avez déjà reçu votre récompense. Veuillez patienter 12h avant le prochain vote et récupérer la récompense.",
+      "no_register": "⚠️ Vous avez voté pour **Yu-Gi-Oh Collector** mais vous n'êtes pas encore inscrit. Faites la commande `register` pour vous enregistrer et ensuite recevoir la méga récompense.",
+      "dont_confirm": "❌ Vous devez avoir voté avant de pouvoir récupérer votre récompense:\n▶️ https://top.gg/bot/672416519912947732/vote"
+    },
+    "deck": {
+      "description": "Construisez votre deck à partir de vos cartes collectées.",
+      "soon": "<:book_2:696489119508987936> Cette commande sera disponible prochainement..."
+    },
+    "achievements": {
+      "description": "Voir la liste des succès à compléter.",
+      "update": "✅ Vos succès ont été mis à jour.",
+      "title": "<:ygoBEWD:674394647702929410> Liste des succès.",
+      "reset": "⚠️ Souhaitez-vous vraiment remettre à zéro tous vos achievements ?\n▶️ `achievements reset confirm`",
+      "reset_confirm": "✅ Tous vos achievements ont étés remis à 0 !",
+      "already_reset": "❌ Impossible de remettre à zéro vos achievements, vous l'avez déjà fait auparavant."
+    },
+    "craft": {
+      "description": "Construire une carte avec les morceaux de carte récoltés.",
+      "rarityList": "\uD83D\uDCCC [**KaibaCorp**] Voici la liste des raretés pour constuire vos cartes:\n\n<:shard:714935344008528023> **Morceaux de Carte**: {card_pieces}\n{list}\n\n▶️ `craft <card_rarity>`",
+      "cardPiecesFormat": "{emote} {rarity}: {count} Morceaux de carte",
+      "rarityNotFound": "❌ La rareté n'a pas été trouvé.",
+      "noEnoughCardPieces": "❌ Vous n'avez pas assez de morceaux de carte pour construire une carte {rarity}.",
+      "noConfirm": "❓ Souhaitez-vous vraiment construire une carte {emote} {rarity} avec {card_pieces} <:shard:714935344008528023> Morceaux de carte ?\n\n▶️ `craft {rarity} confirm`",
+      "title": "<:ygocard:672484748106399784> Craft"
+    },
+    "factory": {
+      "description": "Usine de production de morceaux de carte.",
+      "title": "\uD83C\uDFED Usine (Beta)",
+      "noLevel": "❌ Votre usine n'a pas encore été construite.\n\n▶️ `factory upgrade`",
+      "info": "<:ygorank:674309421169508375> **Niveau**: {level}/{level_max}\n<:ygoQuickP:674394113734475778> **Energies**: {energies}/{energies_max}\n<:ygoQuickP:674394113734475778> **Energies Bonus**: {energiesBonus}/{maxEnergiesBonus} [Pendule: {pendulums}/{maxPendulums}]\n<:ygoTimeWiz:674395570449678336> **Temps de production**: {time}h [Magie: {spells}/{maxSpells}]\n<:cylinder:696489657655099422> **Taux de réussite**: {rate}% [Piège: {traps}/{maxTraps}]\n<:ygohat:674394585673498634> **Taux de Critique**: {critic}% [Lien: {links}/{maxLinks}]\n<:shard:714935344008528023> **Morceaux de cartes**: {fragments}/{fragments_max} [Jeton: {tokens}/{maxTokens}]",
+      "production": "Production",
+      "stopped": "❌ L'usine est à l'arrêt.\n\n▶️ `factory fill <Cards...>`",
+      "dontClaim": "❌ Aucun morceau de carte n'a encore été produit.",
+      "claim": "✅ Vous avez récupéré {fragments} morceaux de carte.",
+      "maxed": "❌ Votre usine est déjà au niveau maximum.",
+      "error_upgrade": "❌ Une erreur est survenue sur les prix de l'usine.",
+      "upgrade_request": "❓ Souhaitez-vous vraiment améliorer votre usine au niveau {level} ?\n\n**Prix**\n\n<:ygomoney:672880682065854466> {money}$\n<:shard:714935344008528023> {fragments} Morceau(x) de Carte",
+      "cantUpgrade": "❌ Impossible de payer l'amélioration de l'usine. Vous n'avez pas toutes les resources requises.",
+      "upgrade": "✅ Votre usine a bien été amélioré au niveau {level}.",
+      "fill_sample": "▶️ factory fill card_id.card_rarity [...]",
+      "fill_confirm": "✅ {card} ajouté avec succès. {extra}",
+      "extra_energy": "(+ {energy} points d'énergies) [{energies}/{maxEnergies}]",
+      "extra_critic": "(+ {critic} de critique) [{critics}/{maxCritics}]",
+      "extra_spell": "(- {hour} heure(s) de temps de production) [{spells}/{maxSpells}]",
+      "extra_trap": "(+ {percent}% de taux de réussite) [{traps}/{maxTraps}]",
+      "extra_token": "(+ {capacity} de stockage) [{tokens}/{maxTokens}]",
+      "extra_pendulum": "(+ {energies} points d'énergies max) [{pendulums}/{maxPendulums}]",
+      "fill_error": "❌ {card} n'a pas pu être ajouté.",
+      "advancement": "✅ Le plaisir de finir l'usine !"
+    },
+    "ygipass": {
+      "description": "Un Pass rempli de récompense.",
+      "end": "❌ Le pass n'est plus disponible.",
+      "announced": "<:dmg:696486425063063667> Le **YGIPass Saison II** est maintenant disponible ! Gagnez des <:goats:696486779699593216> **Boucs Émissaires** en accomplissant des quêtes quotidienne pour débloquer toutes les récompenses du Pass. (Il y a plus de 350 000 <:ygomoney:672880682065854466> de récompense). Vous aurez d'avantage d’information avec la commande `ygipass`.",
+      "title": "<:dmg:696486425063063667> YGIPass II",
+      "buy_description": "Le **YGIPass Saison II** est maintenant disponible ! Gagnez des <:goats:696486779699593216> **Boucs Émissaires** en accomplissant des quêtes quotidienne pour débloquer toutes les récompenses du Pass. (Il y a plus de 350 000 <:ygomoney:672880682065854466> de récompense).\n\nPour acheter ce Pass vous avez deux options:",
+      "title_unlock": "<:dmg:696486425063063667> Nouvel Récompense",
+      "dont_buy": "❌ Impossible d'acheter ce Pass, vous n'avez pas les resources requis.",
+      "buy_confirm": "✅ Félicitations ! Le **YGIPass** vient d'être débloqué. Vous pouvez maintenant obtenir vos récompenses en recoltant des <:goats:696486779699593216> **Boucs Emissaires**.",
+      "option_one": "Option 1",
+      "option_one_description": "Payer 25 000 <:ygomoney:672880682065854466>",
+      "option_one_description_vip": "**VIP**: Gratuit.",
+      "option_two": "Option 2",
+      "option_two_description": "Payer 5€.\nA voir avec l'Admistrateur du Bot en rejoignant le [Discord officiel](https://discord.gg/pGkMxfH).",
+      "level_unlock": "<:unlock_2:689863326108483606> Niveau {level}",
+      "level_lock": "<:lock_2:689863914737238125> Niveau {level}",
+      "dont_upgrade": "❌ Vous n'avez pas assez de <:goats:696486779699593216> **Bouc Emissaire** pour monter de niveau dans le **YGIPass II**.",
+      "description_pass": "<:goats:696486779699593216> **Bouc Emissaire**: {count}/20\n<:feather:696490465276461107> **Quêtes en cours**: {quest}/{max_quest}\n\n▶ Faites la commande `quests` pour voir la liste de vos quêtes.",
+      "end_title": "Fin du YGIPass II",
+      "end_description": "<:ygoTimeWiz:674395570449678336> Le **YGIPass Saison II** se termine dans {day} jour(s) {hour} heure(s) {minute} minute(s) et {second} seconde(s).",
+      "convertGoat": "✅ Vous avez converti {count} <:goats:696486779699593216> contre {money} <:ygomoney:672880682065854466>."
+    },
+    "quests": {
+      "description": "Voir sa liste de quête pour completer le **YGIPass Saison II**.",
+      "no_view": "❌ Impossible de voir la liste de quête, vous n'avez pas le <:dmg:696486425063063667> **YGIPass Saison II**.",
+      "title": "<:feather:696490465276461107> Liste des Quêtes",
+      "end_title": "<:feather:696490465276461107> Quête Terminé"
+    },
+    "premium": {
+      "description": "Connaitre le temps restant de votre premium.",
+      "no_premium": "❌ {name}, vous n'avez pas le premium. Faites la commande `shop` pour voir les tarifs avec l'argent du jeu. Vous pouvez aussi obtenir les différents premium comme suit:\n\n**Argent Réel**\n<:ygopuzzle:672881036601983027> 1 Mois: 2€\n<:ygopuzzle:672881036601983027> 3 Mois: 6€\n<:ygopuzzle:672881036601983027> 6 Mois: 12€\n<:ygopuzzle:672881036601983027> 1 an: 24€\n\n**Ressources Enderbot**\n<:ygopuzzle:672881036601983027> 1 Mois: 2 000 <:pp:696755766560030790> ou 1 000 <:am:696755767868391534>\n<:ygopuzzle:672881036601983027> 3 Mois: 6 000 <:pp:696755766560030790> ou 3 000 <:am:696755767868391534>\n<:ygopuzzle:672881036601983027> 6 Mois: 12 000 <:pp:696755766560030790> ou 6 000 <:am:696755767868391534>\n<:ygopuzzle:672881036601983027> 1 an: 15 000 <:pp:696755766560030790> ou 7 500 <:am:696755767868391534>\n\n**Avantages**\n• -20% sur toute la boutique\n• -10% sur la **RoleMachine**\n• Le logo du puzzle de millenium sur votre profil\n• 1 à 2 cartes supplémentaire dans les boosters\n• Une carte customisable sur votre profil",
+      "full_premium": "✅ {name}, Félicitations ! Vous avez le premium à vie.\n\n**Avantages**\n• -20% sur toute la boutique\n• -10% sur la **RoleMachine**\n• Le logo du puzzle de millenium sur votre profil\n• 1 à 2 cartes supplémentaire dans les boosters\n• Une carte customisable sur votre profil",
+      "premium": "✅ {name}, Félicitations ! Vous avez le premium. Il vous reste {day} jour(s) {hour} heure(s) {minute} minute(s) et {second} seconde(s).\n\n**Avantages**\n• -20% sur toute la boutique\n• -10% sur la **RoleMachine**\n• Le logo du puzzle de millenium sur votre profil\n• 1 à 2 cartes supplémentaire dans les boosters\n• Une carte customisable sur votre profil",
+      "no_player": "❌ {name} n'est pas enregistré dans la base de donnée.",
+      "reset": "✅ {name} n'a plus son premium.",
+      "add_life": "✅ {name} a bien reçu son premium à vie.",
+      "add_premium": "✅ {name} a bien reçu {month} mois de premium supplémentaire."
+    },
+    "vip": {
+      "description": "Connaitre le temps restant de votre VIP.",
+      "no_vip": "❌ {name}, vous n'avez pas le VIP.\n\n▶️ **Prix**\n• 1 Mois: 5€\n• 3 Mois: 14€\n• 6 Mois: 27€\n• 1 an: 50€\n\n▶️ **Avantages**\n• Premium activé.\n• YGIPass Gratuit.\n• 2 Quêtes par jour.\n• Tag VIP.\n• Rôle VIP sur le serveur Discord officiel.\n• Accès au serveur de test.\n\n(*Veuillez contacter le développeur du bot pour plus d'informations. `!ygo info`*)",
+      "full_vip": "✅ {name}, Félicitations ! Vous avez le VIP à vie.\n\n▶️ **Avantages**\n• Premium activé.\n• YGIPass Gratuit.\n• 2 Quêtes par jour.\n• Tag VIP.\n• Rôle VIP sur le serveur Discord officiel.\n• Accès au serveur de test.\n\n(*Veuillez contacter le développeur du bot pour plus d'informations. `!ygo info`*)",
+      "vip": "✅ {name}, Félicitations ! Vous avez le VIP. Il vous reste {day} jour(s) {hour} heure(s) {minute} minute(s) et {second} seconde(s).\n\n▶️ **Avantages**\n• Premium activé.\n• YGIPass Gratuit.\n• 2 Quêtes par jour.\n• Tag VIP.\n• Rôle VIP sur le serveur Discord officiel.\n• Accès au serveur de test.\n\n(*Veuillez contacter le développeur du bot pour plus d'informations. `!ygo info`*)",
+      "no_player": "❌ {name} n'est pas enregistré dans la base de donnée.",
+      "reset": "✅ {name} n'a plus son VIP.",
+      "add_life": "✅ {name} a bien reçu son VIP à vie.",
+      "add_vip": "✅ {name} a bien reçu {month} mois de VIP supplémentaire."
+    },
+    "settings": {
+      "description": "Changer des options de jeu.",
+      "image": {
+        "big": "✅ L'image des cartes sera désormais affichée en grand.",
+        "small": "✅ L'image des cartes sera désormais affichée en petit."
+      },
+      "code": {
+        "set": "✅ Le code de promotion `{code}` à bien été enregistré par défaut.",
+        "reset": "✅ Le code de promotion à bien été retiré."
+      },
+      "vote": {
+        "no_vip": "❌ Vous devez être **VIP** pour changer cette option. ▶️ `vip`",
+        "enable": "✅ L'annonce des votes est maintenant activée.",
+        "disable": "✅ L'annonce des votes est maintenant désactivée."
+      }
+    },
+    "mystery": {
+      "description": "Attrapez vite cet émote avant qu'un autre joueur le fasse !",
+      "info": "La réaction <:mystery_card:728771639097163827> apparaitra désormais de temps à autre sur les messages. (hormis ce des bots). Attrapez vite cet émote avant qu'un autre joueur le fasse ! Il vous fera gagner de l'argent, des morceau de carte ou bien des cartes ! \uD83D\uDE04"
+    },
+    "roll": {
+      "description": "Lancer la RollMachine pour gagner des récompenses en tous genres ou rien du tout.",
+      "title": "\uD83C\uDFB0 RollMachine",
+      "price": "Prix",
+      "money": "<:ygomoney:672880682065854466> {money}$",
+      "no_money": "❌ Vous n'avez pas assez d'argent pour lancer la RollMachine. [<:ygomoney:672880682065854466> {money}$]",
+      "bonus": "❓❓❓ Aïe aïe aïe, la machine s'emballe..."
+    },
+    "release": {
+      "description": "Découvrez le contenu d'une mise à jour.",
+      "no_release": "❌ La version `{version}` n'a pas été trouvé !",
+      "release": "❓ Version: `{version}`\n{release}"
+    },
+    "alarm": {
+      "description": "Etre averti lorsqu'une action est disponible."
+    },
+    "rarities": {
+      "description": "Voir les informations des différentes raretés!",
+      "rarityTitle": "Information sur les raretés",
+      "rarityFormat": "**{rarity}**:\n  Prefix: {rarity-prefix}\n  Total: {count} carte(s)",
+      "notFound": "❌ Aucune rareté n'a été trouvé !"
+    },
+    "badges": {
+      "description": "Voir les informations des badges",
+      "badgeTitle": "Badges"
+    }
+  },
+  "roll_machine": {
+    "rewards": {
+      "empty": "❌ Dommage, vous n'avez rien gagné. Retentez votre chance.",
+      "money": "✅ Félicitations ! Vous remportez <:ygomoney:672880682065854466> {value}$.",
+      "fragment": "✅ Félicitations ! Vous remportez {value} <:shard:714935344008528023> Morceaux de Carte.",
+      "scapegoat": "✅ Félicitations ! Vous remportez {value} <:goats:696486779699593216> Bouc Emissaire.",
+      "quest": "✅ Félicitations ! Vous remportez une <:feather:696490465276461107> quête supplémentaire. ({count}/{maxCount})",
+      "card": "✅ Félicitations ! Vous remportez une carte.",
+      "jackpot": "\uD83C\uDFB0 **JACKPOT!!!** Vous remportez:\n> <:ygomoney:672880682065854466> 20 000$.\n> <:shard:714935344008528023> 1000 Morceaux de carte.\n> <:goats:696486779699593216> 100 Boucs émissaire.\n> {rarity}"
+    }
+  },
+  "achievements": {
+    "complete": "<:ygoBEWD:674394647702929410> Succès complété !",
+    "rewards": "Récompenses",
+    "level": {
+      "name": "Niveau {value}",
+      "description": "Atteindre le niveau {value}."
+    },
+    "progression": {
+      "name": "Progression {value}%",
+      "description": "Atteindre {value}% de progression."
+    },
+    "join_guild": {
+      "name": "Joueur fidèle",
+      "description": "Rejoindre le serveur support."
+    },
+    "millionaire": {
+      "name": "Millionaire",
+      "description": "Posséder un fortune de plus de <:ygomoney:672880682065854466> 1 000 000$",
+      "complete": "Avez-vous vraiment besoin d'une récompense ?"
+    },
+    "reset": {
+      "name": "Remise à zéro",
+      "description": "Remettre à zéro ses achievements. (A utilisation unique.)"
+    },
+    "too_expensive": {
+      "name": "Trop Cher !",
+      "description": "Acheter le booster spécial à <:ygomoney:672880682065854466> 1 000 000$ dans la boutique !",
+      "complete": "Vous avez vraiment acheter ce booster ? :') (+ <:ygomoney:672880682065854466> {money})"
+    },
+    "gdpr": {
+      "name": "RGPD",
+      "description": "Récupérer vos données avec la commande `data`."
+    },
+    "birthday": {
+      "name": "Anniversaire",
+      "description": "Cela fait 1 an que vous vous êtes inscrit !",
+      "complete": "Joyeux anniversaire ! (+ <:ygomoney:672880682065854466> {money}$)"
+    },
+    "factory": {
+      "name": "\uD83C\uDFED Usine Terminé",
+      "description": "Atteindre le niveau maximum de l'usine."
+    },
+    "mystery_card": {
+      "name": "<:mystery_card:728771639097163827> Cadeau Mystère {value}",
+      "description": "Collecter {value} Cadeau(x) Mystère. [{count}/{value}]"
+    },
+    "exodia": {
+      "name": "Exodia l'Interdit",
+      "description": "Collecter les cinq parties d'Exodia L'Interdit."
+    },
+    "final": {
+      "name": "F.I.N.A.L",
+      "description": "Collecter les cinq cartes de la destinée."
+    },
+    "hero": {
+      "name": "H.E.R.O",
+      "description": "Collecter les quatres cartes HERO."
+    },
+    "book_spell": {
+      "name": "Livres magiques",
+      "description": "Collecter les quatres livres magiques."
+    },
+    "mirror_force": {
+      "name": "Force Miroir",
+      "description": "Collecter les six cartes force miroir."
+    },
+    "pot": {
+      "name": "Les \"Pot\"",
+      "description": "Collecter toutes les cartes \"Pot\"."
+    },
+    "friendship": {
+      "name": "Cartes de l'amitié",
+      "description": "Collecter les quatres cartes de l'amitié."
+    },
+    "sarcophagus": {
+      "name": "Les Sarcophages",
+      "description": "Collecter les quatres cartes sarcophages."
+    },
+    "bamboo_sword": {
+      "name": "Les épées de bambou.",
+      "description": "Collecter les cinq cartes d'épée de bambou."
+    },
+    "light_sword": {
+      "name": "Les épées de révélation de la lumière.",
+      "description": "Collecter les deux cartes des épées de révélation de la lumière."
+    },
+    "egyptian_god": {
+      "name": "Les dieux Égyptiens",
+      "description": "Collecter les trois cartes des dieux égyptiens."
+    },
+    "lord": {
+      "name": "Les demi-dieux",
+      "description": "Collecter les trois cartes des demi-dieux."
+    },
+    "blue_eyes_ultimate_dragon": {
+      "name": "Ultime Dragon Blanc aux Yeux Bleus",
+      "description": "Invoquer l'ultime dragon blanc aux yeux bleus."
+    },
+    "dark_magicians": {
+      "name": "Les Magiciens des Ténèbres",
+      "description": "Invoquer les Magiciens des Ténèbres."
+    },
+    "booster_common": {
+      "name": "Booster Common {value}",
+      "description": "Ouvrir {value} booster(s) Common. [{count}/{value}]"
+    },
+    "booster_rare": {
+      "name": "Booster Rare {value}",
+      "description": "Ouvrir {value} booster(s) Rare. [{count}/{value}]"
+    },
+    "booster_super": {
+      "name": "Booster Super {value}",
+      "description": "Ouvrir {value} booster(s) Super. [{count}/{value}]"
+    },
+    "booster_ultra": {
+      "name": "Booster Ultra {value}",
+      "description": "Ouvrir {value} booster(s) Ultra. [{count}/{value}]"
+    },
+    "booster_mega_common": {
+      "name": "Booster MegaCommon {value}",
+      "description": "Ouvrir {value} booster(s) MegaCommon. [{count}/{value}]"
+    },
+    "booster_mega_rare": {
+      "name": "Booster MegaRare {value}",
+      "description": "Ouvrir {value} booster(s) MegaRare. [{count}/{value}]"
+    },
+    "booster_mega_super": {
+      "name": "Booster MegaSuper {value}",
+      "description": "Ouvrir {value} booster(s) MegaSuper. [{count}/{value}]"
+    },
+    "booster_mega_ultra": {
+      "name": "Booster MegaUltra {value}",
+      "description": "Ouvrir {value} booster(s) MegaUltra. [{count}/{value}]"
+    },
+    "ygopass": {
+      "name": "YGIPass",
+      "description": "Acheter le YGIPass."
+    },
+    "ygopass_complete": {
+      "name": "YGIPass Terminé",
+      "description": "Terminer le YGIPass."
+    },
+    "hourly": {
+      "name": "Hourly {value}",
+      "description": "Atteindre {value} sur votre combo hourly durant le mois. [{count}/{value}]"
+    },
+    "daily": {
+      "name": "Daily {value}",
+      "description": "Atteindre {value} sur votre combo daily durant le mois. [{count}/{value}]"
+    },
+    "vote": {
+      "name": "Vote {value}",
+      "description": "Voter {value} fois durant le mois. [{count}/{value}]"
+    },
+    "daycard": {
+      "name": "Daycard {value}",
+      "description": "Récupérer {value} daycard. [{count}/{value}]"
+    },
+    "secret_word": {
+      "name": "SecretWord {value}",
+      "description": "Terminer {value} secretword. [{count}/{value}]"
+    },
+    "roll": {
+      "name": "\uD83C\uDFB0 RollMachine",
+      "description": "Lancer la RollMachine !"
+    },
+    "empty_reward_roll": {
+      "name": "\uD83C\uDFB0 Bon perdant",
+      "description": "Ne rien gagner à la RollMachine !"
+    },
+    "quest_reward_roll": {
+      "name": "\uD83C\uDFB0 Quête Gagnante",
+      "description": "Gagner une quête à la RollMachine !"
+    },
+    "card_reward_roll": {
+      "name": "\uD83C\uDFB0 Carte Gagnante",
+      "description": "Gagner une carte à la RollMachine !"
+    },
+    "money_reward_roll": {
+      "name": "\uD83C\uDFB0 Money Gagnante",
+      "description": "Gagner de la money à la RollMachine !"
+    },
+    "fragment_reward_roll": {
+      "name": "\uD83C\uDFB0 Morceau de Carte Gagnant",
+      "description": "Gagner des morceaux de Carte à la RollMachine !"
+    },
+    "scapegoat_reward_roll": {
+      "name": "\uD83C\uDFB0 Bouc Emissaire Gagnant",
+      "description": "Gagner des Bouc Emissaire à la RollMachine !"
+    },
+    "double_reward_roll": {
+      "name": "\uD83C\uDFB0 Double Roll",
+      "description": "Obtenir deux récompenses en un seul lancé !"
+    },
+    "jackpot_reward_roll": {
+      "name": "\uD83C\uDFB0 Jackpot",
+      "description": "Obtenir le jackpot à la RollMachine !"
+    },
+    "complete_reward_roll": {
+      "name": "\uD83C\uDFB0 Roi de la RollMachine",
+      "description": "Gagner chaque type de récompense à la RollMachine."
+    }
+  },
+  "quest": {
+    "name":"<:feather:696490465276461107> Quête",
+    "description": "Acheter une quête permet de terminer le <:dmg:696486425063063667> **YGIPass**.",
+    "experience": {
+      "name": "<a:ygoexp:673629296958505040> Experience",
+      "description": "Récolter 1000 <a:ygoexp:673629296958505040> Expérience. [{exp}/1000] +{point} <:goats:696486779699593216>"
+    },
+    "booster_common": {
+      "name": "{name}",
+      "description": "Ouvrir 10 {name}. [{count}/10] +{point} <:goats:696486779699593216>"
+    },
+    "booster_rare": {
+      "name": "{name}",
+      "description": "Ouvrir 5 {name}. [{count}/5] +{point} <:goats:696486779699593216>"
+    },
+    "booster_super": {
+      "name": "{name}",
+      "description": "Ouvrir 2 {name}. [{count}/2] +{point} <:goats:696486779699593216>"
+    },
+    "booster_ultra": {
+      "name": "{name}",
+      "description": "Ouvrir 2 {name}. [{count}/2] +{point} <:goats:696486779699593216>"
+    },
+    "booster_mega_common": {
+      "name": "{name}",
+      "description": "Ouvrir 1 {name}. [{count}/1] +{point} <:goats:696486779699593216>"
+    },
+    "booster_mega_rare": {
+      "name": "{name}",
+      "description": "Ouvrir 1 {name}. [{count}/1] +{point} <:goats:696486779699593216>"
+    },
+    "booster_mega_super": {
+      "name": "{name}",
+      "description": "Ouvrir 1 {name}. [{count}/1] +{point} <:goats:696486779699593216>"
+    },
+    "booster_mega_ultra": {
+      "name": "{name}",
+      "description": "Ouvrir 1 {name}. [{count}/1] +{point} <:goats:696486779699593216>"
+    },
+    "secretword": {
+      "name": "<:ygohat:674394585673498634> Mot Mystère",
+      "description": "Récupérer 4 Mots mystère. [{count}/4] +{point} <:goats:696486779699593216>"
+    },
+    "mystery": {
+      "name": "<:mystery_card:728771639097163827> Cadeaux Mystère",
+      "description": "Récupérer 3 Cadeaux mystère. [{count}/3] +{point} <:goats:696486779699593216>"
+    },
+    "hourly": {
+      "name": "\uD83D\uDCC6 Hourly",
+      "description": "Récupérer 24 hourly. [{count}/24] +{point} <:goats:696486779699593216>"
+    },
+    "vote": {
+      "name": "<:dmg:696486425063063667> Vote",
+      "description": "Voter 2 fois. [{count}/2] +{point} <:goats:696486779699593216>"
+    },
+    "card_common": {
+      "name": "{name}",
+      "description": "Récolter 50 Cartes {name}. [{count}/50] +{point} <:goats:696486779699593216>"
+    },
+    "card_rare": {
+      "name": "{name}",
+      "description": "Récolter 25 Cartes {name}. [{count}/25] +{point} <:goats:696486779699593216>"
+    },
+    "card_super_rare": {
+      "name": "{name}",
+      "description": "Récolter 10 Cartes {name}. [{count}/10] +{point} <:goats:696486779699593216>"
+    },
+    "card_ultra_rare": {
+      "name": "{name}",
+      "description": "Récolter 5 Cartes {name}. [{count}/5] +{point} <:goats:696486779699593216>"
+    },
+    "card_secret_rare": {
+      "name": "{name}",
+      "description": "Récolter 2 Cartes {name}. [{count}/2] +{point} <:goats:696486779699593216>"
+    },
+    "monster_card": {
+      "name": "<:ygolvl:672958193365942302> Monstre",
+      "description": "Récolter 50 Cartes monstres. [{count}/50] +{point} <:goats:696486779699593216>"
+    },
+    "spell_card": {
+      "name": "<:ygospell:674320275655098395> Magie",
+      "description": "Récolter 25 Cartes magies. [{count}/25] +{point} <:goats:696486779699593216>"
+    },
+    "trap_card": {
+      "name": "<:ygotrap:674320274639814683> Piège",
+      "description": "Récolter 25 Cartes pièges. [{count}/25] +{point} <:goats:696486779699593216>"
+    },
+    "daily": {
+      "name": "<:reborn:696487847800340491> Daily",
+      "description": "Récupérer 3 Daily. [{count}/3] +{point} <:goats:696486779699593216>"
+    },
+    "roll": {
+      "name": "\uD83C\uDFB0 RollMachine",
+      "description": "Jouer 3 fois à la RollMachine. [{count}/3] +{point} <:goats:696486779699593216>"
+    }
+  },
+  "alarm": {
+    "vote": {
+      "title": "Vote",
+      "description": "Vous pouvez maintenant voter pour récupérer votre récompense. `vote`",
+      "message": "✅ Vous serez averti dans 12 heures pour donner votre vote et récupérer votre récompense.",
+      "already": "❌ Vous pouvez déjà voter ou bien récuperer votre récompense. ▶️ `vote`"
+    },
+    "hourly": {
+      "title": "Hourly",
+      "description": "Votre Hourly est maintenant disponible. `hourly`",
+      "message": "✅ Vous serez averti dans une heure de votre prochain hourly."
+    },
+    "secretword": {
+      "title": "Mot Secret",
+      "description": "Les bureaux des Mots Secret est désormais ouvert. `secretword`",
+      "message": "✅ Vous serez notifié dans 6 heures pour l'ouverture des bureaux des mots secrets."
+    },
+    "unknown": {
+      "title": "Rappel",
+      "description": "Un rappel a été demandé de votre mais je n'ai aucune idée de quoi il s'agit."
+    }
+  },
+  "badges": {
+    "title": "Badges",
+    "jackpot": {
+      "name": "Jackpot",
+      "description": "Gagner le jackpot à la **RollMachine**."
+    },
+    "staff": {
+      "name": "Staff",
+      "description": "Faire partie de l'équipe de Yu-Gi-Oh Collector."
+    },
+    "translator": {
+      "name": "Traducteur",
+      "description": "Aider à la traduction et à la correction des messages."
+    },
+    "millionaire": {
+      "name": "Millionaire",
+      "description": "Avoir atteint le million."
+    },
+    "complete_collector": {
+      "name": "Collectionneur",
+      "description": "Ayez toutes les cartes en votre possession."
+    },
+    "elite_player": {
+      "name": "Joueur d'élite",
+      "description": "Atteindre le niveau 200."
+    },
+    "donor": {
+      "name": "Donateur",
+      "description": "Faire une donation: (Niveau 1: <= 10€ | Niveau 2: <= 50€ | Niveau 3: > 50€)"
+    },
+    "voter": {
+      "name": "Voteur fou",
+      "description": "Faire 60 votes en 1 mois."
+    },
+    "support": {
+      "name": "Serveur Support",
+      "description": "Être sur le serveur support."
+    },
+    "classement": {
+      "name": "Top Joueur",
+      "description": "Être sur le podium. (Niveau 1: 3ème | Niveau 2: 2ème | Niveau 3: 1er)"
+    }
+  }
+}
