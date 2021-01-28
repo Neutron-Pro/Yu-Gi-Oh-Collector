@@ -17,6 +17,9 @@
       "description": "<:omgserv:728627893621751848> [**OMGServ**]({link})\n  ▶️ -5% on their entire shop: `YGOC`\n  ▶️ [Click here to view their store.]({link})"
     }
   },
+  "announcements": {
+    "birthday": "\uD83C\uDF89 Weekend special 1 year! Take advantage of all the benefits: \uD83E\uDD73 \n{link}"
+  },
   "ban_info": {
     "0": "❌",
     "1": "Limited",
@@ -347,7 +350,11 @@
       "extra_token": "(+ {capacity} of storage) [{tokens}/{maxTokens}]",
       "extra_pendulum": "(+ {energies} max energies) [{pendulums}/{maxPendulums}]",
       "fill_error": "❌ {card} could not be added.",
-      "advancement": "✅ The pleasure of finishing the factory !"
+      "advancement": "✅ The pleasure of finishing the factory !",
+      "lock_sample": "▶️ <lock|unlock> card_id.card_rarity [...]",
+      "locked": "<:lock_2:689863914737238125> {card} successfully locked. It will no longer be taken by the auto-fill.",
+      "unlocked": "<:unlock_2:689863326108483606> {card} successfully unlocked. It will now be taken by auto-fill.",
+      "dontRefill": "❌ Impossible to fill your factory automatically. Your factory must be full or you don't have enough cards."
     },
     "ygipass": {
       "description": "A pass with a lot of reward.",
@@ -359,7 +366,7 @@
       "dont_buy": "❌ You cannot buy this Pass, you do not have the necessary resources.",
       "buy_confirm": "✅ Congratulations! The **YGIPass Season II** has just been unlocked. You can now get your rewards by harvesting <:goats:696486779699593216> **Scapegoats**.",
       "option_one": "Option 1",
-      "option_one_description": "Pay <:ygomoney:672880682065854466> 25,000",
+      "option_one_description": "Pay <:ygomoney:672880682065854466> {money}",
       "option_one_description_vip": "**VIP**: Free.",
       "option_two": "Option 2",
       "option_two_description": "Pay USD 5,00.\nAsk the bot administrator by joining the [official Discord](https://discord.gg/pGkMxfH).",

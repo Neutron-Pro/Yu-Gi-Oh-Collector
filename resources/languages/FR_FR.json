@@ -17,6 +17,9 @@
       "description": "<:omgserv:728627893621751848> [**OMGServ**]({link})\n  ▶️ -5% sur toute leur boutique: `YGOC`\n  ▶️ [Click ici pour voir leur boutique.]({link})"
     }
   },
+  "announcements": {
+    "birthday": "\uD83C\uDF89 Week-End spécial 1 an ! Profitez de tous les avantages: \uD83E\uDD73 \n{link}"
+  },
   "ban_info": {
     "0": "❌",
     "1": "Limité",
@@ -351,7 +354,11 @@
       "extra_token": "(+ {capacity} de stockage) [{tokens}/{maxTokens}]",
       "extra_pendulum": "(+ {energies} points d'énergies max) [{pendulums}/{maxPendulums}]",
       "fill_error": "❌ {card} n'a pas pu être ajouté.",
-      "advancement": "✅ Le plaisir de finir l'usine !"
+      "advancement": "✅ Le plaisir de finir l'usine !",
+      "lock_sample": "▶️ <lock|unlock> card_id.card_rarity [...]",
+      "locked": "<:lock_2:689863914737238125> {card} bloqué avec succès. Elle ne sera plus pris en compte par l'auto-fill.",
+      "unlocked": "<:unlock_2:689863326108483606> {card} débloqué avec succès. Elle sera désormais pris en compte par l'auto-fill.",
+      "dontRefill": "❌ Impossible de remplir automatiquement votre usine. Votre usine doit-être remplie ou vous n'avez pas assez de carte."
     },
     "ygipass": {
       "description": "Un Pass rempli de récompense.",
@@ -363,7 +370,7 @@
       "dont_buy": "❌ Impossible d'acheter ce Pass, vous n'avez pas les resources requis.",
       "buy_confirm": "✅ Félicitations ! Le **YGIPass** vient d'être débloqué. Vous pouvez maintenant obtenir vos récompenses en recoltant des <:goats:696486779699593216> **Boucs Emissaires**.",
       "option_one": "Option 1",
-      "option_one_description": "Payer 25 000 <:ygomoney:672880682065854466>",
+      "option_one_description": "Payer {money} <:ygomoney:672880682065854466>",
       "option_one_description_vip": "**VIP**: Gratuit.",
       "option_two": "Option 2",
       "option_two_description": "Payer 5€.\nA voir avec l'Admistrateur du Bot en rejoignant le [Discord officiel](https://discord.gg/pGkMxfH).",
