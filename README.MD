@@ -1,10 +1,10 @@
-# Yu-Gi-Oh Collection v1.9.1
+# Yu-Gi-Oh Collection v1.10.0
 
 # English
 
 **Hi everyone !**
 
-I'd like to present you **Yu-Gi-Oh Collector**, which is a game in which you'll have to collect about 19,000 available cards of the famous game **Yu Gi Oh**
+I'd like to present you **Yu-Gi-Oh Collector**, which is a game in which you'll have to collect about 20,000 available cards of the famous game **Yu Gi Oh**
 
 There are different ways to collect cards :
 
@@ -29,7 +29,7 @@ NeutronStars.
 
 **Bonjour à tous**
 
-Je vous présente **Yu-Gi-Oh Collector** ou le but est de collecter les quelques 19 000 cartes disponibles du célèbre jeu **Yu Gi Oh**.
+Je vous présente **Yu-Gi-Oh Collector** ou le but est de collecter les quelques 20 000 cartes disponibles du célèbre jeu **Yu Gi Oh**.
 
 Il y a plusieurs manière de collecter des cartes Yu-Gi-Oh:
 
