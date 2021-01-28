@@ -60,7 +60,23 @@ Donateur: Faire une donations (Niveau 1: <= 10€, Niveau 2: <= 50€, Niveau 3:
 Voteur: Voter 60 fois dans le courant du mois.
 Support: Etre sur le serveur support.
 Classement: Etre dans le top 3 des joueurs.
+Joueur d'élite: Atteindre le niveau 200.
 ```
+
+![Millionaire](../../../resources/images/badge_million.png)
+![Jackpot](../../../resources/images/badge_jackpot.png)
+![Staff](../../../resources/images/badge_staff.png)
+![Traducteur](../../../resources/images/badge_correcteur.png)
+![Collectionneur](../../../resources/images/badge_collection.png)
+![Donateur Cuivre](../../../resources/images/badge_don_cuivre.png)
+![Donateur Argent](../../../resources/images/badge_don_argent.png)
+![Donateur Or](../../../resources/images/badge_don_or.png)
+![Voteur](../../../resources/images/badge_top_vote.png)
+![Support](../../../resources/images/badge_support.png)
+![Classement cuivre](../../../resources/images/badge_top_3.png)
+![Classement argent](../../../resources/images/badge_top_2.png)
+![Classement or](../../../resources/images/badge_top_1.png)
+![Joueur d'élite](../../../resources/images/badge_joueur_experimente.png)
 
 ⇰ **Votes**
 

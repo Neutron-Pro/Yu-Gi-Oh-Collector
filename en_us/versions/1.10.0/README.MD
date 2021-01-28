@@ -60,7 +60,23 @@ Donor: Make a donation (Level 1: <= 10 USD, Level 2: <= 50 USD, Level 3: > 50 US
 Crazy Voter: Vote 60 times during the month.
 Support: Be on the support server.
 Classement: To be in the top 3 players.
+Elite player: Reaching the level 200.
 ```
+
+![Millionaire](../../../resources/images/badge_million.png)
+![Jackpot](../../../resources/images/badge_jackpot.png)
+![Staff](../../../resources/images/badge_staff.png)
+![Translator](../../../resources/images/badge_correcteur.png)
+![Collector](../../../resources/images/badge_collection.png)
+![Copper Donor](../../../resources/images/badge_don_cuivre.png)
+![Iron Donateur](../../../resources/images/badge_don_argent.png)
+![Gold Donateur](../../../resources/images/badge_don_or.png)
+![Crazy Voter](../../../resources/images/badge_top_vote.png)
+![Support](../../../resources/images/badge_support.png)
+![Copper Classement](../../../resources/images/badge_top_3.png)
+![Iron Classement](../../../resources/images/badge_top_2.png)
+![Gold Classement](../../../resources/images/badge_top_1.png)
+![Elite player](../../../resources/images/badge_joueur_experimente.png)
 
 ⇰ **Votes**
 
